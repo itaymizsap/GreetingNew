@@ -1,0 +1,25 @@
+Login:
+======
+C:\Program Files\MySQL\bin>mysql.exe --user root --password
+
+
+
+UPDATE greeting_db 
+    SET authentication_string = PASSWORD('MyNewPass'), password_expired = 'N'
+    WHERE User = 'root' AND Host = 'localhost';
+FLUSH PRIVILEGES;
+
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
+
+
+Greeting user creation:
+=======================
+UPDATE greeting_db.greeting
+    SET authentication_string = PASSWORD('greeting'), password_expired = 'N'
+    WHERE User = 'greeting' AND Host = 'localhost';
+FLUSH PRIVILEGES;
+
+grant ALL ON *.* to greeting@'%' IDENTIFIED BY 'greeting';
+
+grant select, insert, delete, update on greeting_db.* to 'greeting'@'localhost' identified by 'greeting';
