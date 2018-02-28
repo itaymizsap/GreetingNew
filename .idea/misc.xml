@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/GreetingUI/pom.xml" />
         <option value="$PROJECT_DIR$/MongoDbManager/pom.xml" />
         <option value="$PROJECT_DIR$/UsingIntelliJExerciseMaven/pom.xml" />
+        <option value="$PROJECT_DIR$/GreetingsMySqlService/pom.xml" />
       </list>
     </option>
   </component>
