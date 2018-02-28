@@ -25,10 +25,11 @@ UPDATE greeting_db
     WHERE User = 'greeting' AND Host = 'localhost';
 FLUSH PRIVILEGES;
 
-grant ALL ON *.* to greeting@'%' IDENTIFIED BY 'greeting';
-
 grant select, insert, delete, update on greeting_db.* to 'greeting'@'localhost' identified by 'greeting';
 
+Also:
+=====
+grant ALL ON *.* to greeting@'%' IDENTIFIED BY 'greeting';
 
 
 

@@ -1,10 +1,9 @@
-package com.itay.spring.tutorials.microservices.greeting.ui.greeting.persistence;
+package com.itay.spring.tutorials.microservices.greeting.mysql;
 
 import javax.persistence.*;
 
 @Entity
 public class Greeting {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
