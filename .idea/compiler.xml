@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cucumberTutorial" />
         <module name="GreetingsMySqlService" />
         <module name="spring-boot-greeting-mongodb-manager" />
         <module name="spring-boot-greeting-service" />
@@ -13,6 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cucumberTutorial" target="1.5" />
       <module name="GreetingsMySqlService" target="1.8" />
       <module name="spring-boot-greeting-mongodb-manager" target="1.8" />
       <module name="spring-boot-greeting-service" target="1.8" />
